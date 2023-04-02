@@ -13,82 +13,123 @@
 
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
-    .rtl {
-        direction: rtl;
-    }
+  .rtl {
+    direction: rtl;
+  }
 }
 
 /* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
 [x-cloak=""] {
-    display: none;
+  display: none;
 }
 
 .css-selector {
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
+
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
+
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
+
 /* Theme overrides */
 .bg-gray-900 {
-    background: linear-gradient(300deg,#000000,#0b1f86);
-    background-size: 120% 120%;
-    animation: gradient-animation 8s ease infinite;
-  }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  background: linear-gradient(300deg, #000000, #2142e3);
+  background-size: 120% 120%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
 
-  .homepage--mod {
-    padding-top: 30px;
+  50% {
+    background-position: 100% 50%;
   }
 
-  .text-black{
-    color: #000;
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.homepage--mod {
+  padding-top: 30px;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bg-blue-mod {
+  background: linear-gradient(200deg, #87cefa, #3eb0f7, #87cefa);
+  background-size: 180% 180%;
+  animation: gradient-animation 9s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
 
-  .bg-blue-mod {
-    background: linear-gradient(200deg,#87cefa,#3eb0f7,#87cefa);
-    background-size: 180% 180%;
-    animation: gradient-animation 9s ease infinite;
+  50% {
+    background-position: 100% 50%;
   }
 
-    @keyframes gradient-animation {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-    .white-fill {
-        color: #fff;
-    }
+.white-fill {
+  color: #fff;
+}
+
+.feathers {
+  --tw-translate-x: 60%;
+}
+
+.feathers-2 {
+  position: relative;
+  right: 65px;
+  top: 100px;
+}

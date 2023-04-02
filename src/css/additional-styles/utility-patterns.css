@@ -55,6 +55,7 @@
 .form-select,
 .form-checkbox {
     @apply rounded-sm;
+    border-color: #fff; 
 }
 
 .form-input,

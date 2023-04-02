@@ -26,7 +26,7 @@ function SignUp() {
 
               {/* Page header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                <h1 className="h1">PigeonsAI can revolutionize your sales process.</h1>
+                <h1 className="h1">PigeonsAI will revolutionize your sales process.</h1>
               </div>
 
               {/* Form */}
